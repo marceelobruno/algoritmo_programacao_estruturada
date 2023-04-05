@@ -1,6 +1,7 @@
 # estudante = input('Digite seu nome: ').title()
 # conceito = input('Digite seu conceito: ').title()
 
+# Conditional if ... elif ... else structure
 # if conceito == 'A':
 #     print(f'Olá, {estudante}. O seu status de recomendação é: Fortemente Recomendado.')
 

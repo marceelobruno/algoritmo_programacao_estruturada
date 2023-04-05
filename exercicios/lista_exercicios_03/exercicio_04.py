@@ -6,7 +6,7 @@ OBS: Fulano e Fulana são nomes exemplos."""
 # nome = input('Digite seu nome: ').title()
 # sexo = input('Digite o seu sexo - M ou F: ')
 
-
+# Conditional if ... elif ... else structure
 # if sexo == 'M' or sexo == 'm':
 #     print(f'Olá, Sr. {nome}!')
 
@@ -15,7 +15,6 @@ OBS: Fulano e Fulana são nomes exemplos."""
 
 # else:
 #     print(f'{nome}, você informou um tipo de sexo não existente.')
-
 
 # Using PEP 636 – Structural Pattern Matching
 # https://peps.python.org/pep-0636/
