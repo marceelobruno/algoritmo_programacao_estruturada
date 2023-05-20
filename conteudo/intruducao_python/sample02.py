@@ -1,0 +1,1 @@
+print("Olá usuário, seja bem-vindo ao mundo dos algoritmos.")
