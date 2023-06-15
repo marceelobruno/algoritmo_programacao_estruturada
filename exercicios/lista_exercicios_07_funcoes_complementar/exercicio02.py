@@ -5,17 +5,18 @@ caso contrário.
 Escreva também um programa que, usando a função primo criada, exiba os números primos entre 1 e 100.
 """
 
+
 def eh_primo(numero):
-    if numero <=1:
+    if numero <= 1:
         return False
 
-    for i in range(2,numero):
-        if numero%i==0:
+    for i in range(2, numero):
+        if numero % i == 0:
             return False
         return True
-# Programa Principal
-# Primos de 1 a 100
+# Programa Principal - Primos de 1 a 100
 
-for i in range(1,101):
+
+for i in range(1, 101):
     if eh_primo(i):
         print(i, ' ', end='')
