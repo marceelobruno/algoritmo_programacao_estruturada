@@ -4,13 +4,14 @@ o maior e o menor elemento e suas respectivas posições em que os mesmos foram 
 OBS: Caso existam números iguais mostre a posição da primeira ocorrência.
 """
 N = 6
-a = []
+a = [2, 3, 4, 3, 4, 5]
+rep = []
 
-print(f'Informe os {N} elementos do vetor A:')
-while len(a) < N:
-    elemento = int(input())
-    a.append(elemento)
-print('Vetor A =', a)
+# print(f'Informe os {N} elementos do vetor A:')
+# while len(a) < N:
+#     elemento = int(input())
+#     a.append(elemento)
+# print('Vetor A =', a)
 
 menor = min(a)
 indMenor = a.index(menor)
@@ -19,11 +20,15 @@ indMaior = a.index(maior)
 
 print(f'Menor elemento do vetor: {menor}, posição {indMenor}.')
 print(f'Maior elemento do vetor: {maior}, posição {indMaior}.')
+print()
 
-for i in a:
-    if a.count(i) > 1:
-        posicao = a.index(i)
-        print(f'Números do vetor que se repetem: {i}, posição: {posicao}')
+for i in range(N):
+    if a.count(a[i]) > 1:
+        if a[i] in rep:
+            continue
+        rep.append(a[i])
+        posicao = a.index(a[i])
+        print(f'Números do vetor que se repetem: {a[i]}, posição: {posicao}')
 
 # Usando For
 print('\nUsando for para descobrir o maior/menor elemento e suas posições:')
