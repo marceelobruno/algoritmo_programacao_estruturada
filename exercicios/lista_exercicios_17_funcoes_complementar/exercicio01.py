@@ -5,17 +5,20 @@ Escreva também um programa que leia uma frase e, usando a função vogal criada
 imprima a quantidade de vogais existentes na frase lida.
 """
 
+
 def vogal(letra):
     if letra in 'aeiouAEIOU':
         return True
     return False
 
+
 def total_vogais(frase):
-    cont=0
+    cont = 0
     for caractere in frase:
         if vogal(caractere):
-            cont+=1
+            cont += 1
     return cont
+
 
 frase = input('Informe uma frase: ')
 
