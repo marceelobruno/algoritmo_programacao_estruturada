@@ -1,0 +1,27 @@
+num_linha = 2 # número linhas
+num_col = 3 # número colunas
+
+matriz_a = [None]*num_linha
+for i in range(num_linha):
+    matriz_a[i] = [0]*num_col
+print('Matriz A:', matriz_a)
+
+
+matriz_b = [ [None]*num_col for j in range (num_linha) ]
+print('Matriz B:', matriz_b)
+
+
+matriz_c = [ [0]*num_col for i in range(num_linha) ]
+
+print('\nMatriz antes da leitura: ')
+print(matriz_c)
+
+print('\nDigite os elementos da matriz: ')
+for i in range(num_linha):
+    print(f'Informe os elementos da {i+1}ª linha:')
+    for j in range(num_col):
+        matriz_c[i][j] = int(input())
+
+print('\nMatriz após a leitura: ')
+print(matriz_c)
+
