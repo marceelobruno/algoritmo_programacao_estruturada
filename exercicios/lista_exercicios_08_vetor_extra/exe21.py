@@ -19,11 +19,11 @@ for i in range(tam):
 
 rep_c = a + b
 
-for j in range(len(rep_c)):
-    if rep_c.count(rep_c[j]) > 0:
-        if rep_c[j] in c:
+for i in rep_c:
+    if rep_c.count(rep_c[i]) > 0:
+        if rep_c[i] in c:
             continue
-        c.append(rep_c[j])
+        c.append(rep_c[i])
 
 c.sort()
 
