@@ -1,7 +1,7 @@
 """
 http://www.decom.ufop.br/romildo/2019-2/bcc702/Aula6-Exercicios-Vet-Mat.pdf
 
-10. Faça um programa que lê 8 números inteiros e os armazena em um vetor,
+02. Faça um programa que lê 8 números inteiros e os armazena em um vetor,
 e calcula e mostra dois vetores resultantes:
 • O primeiro vetor resultante deve conter os números positivos;
 • O segundo deve conter os números negativos.
