@@ -9,29 +9,29 @@ Ao final, imprima as duas matrizes (no formato de matriz).
 """
 import random
 
-m = 3 # Linhas
-n = 5 # Colunas
+lin = 3 # Linhas
+col = 5 # Colunas
 
-# Criação das matrizes
-a = [[None]*n for i in range(m)]
-b = [[None]*m for i in range(n)]
+# Criação das linatrizes
+a = [[(random.randint(1,30))for j in range(col)] for i in range(lin)]
+b = [[None]*lin for i in range(col)]
 
 # Gerando valores para matriz A
 print('Matriz A:')
-for i in range(m):
-    for j in range(n):
-        a[i][j] = random.randint(1,30)
+for i in range(lin):
+    for j in range(col):
+        # a[i][j] = random.randint(1,30)
         print(f'{a[i][j]:4}',end=' ')
     print()
 
 # Gerando matriz transposta
-for i in range(m):
-    for j in range(n):
+for i in range(lin):
+    for j in range(col):
         b[j][i] = a[i][j]
 
 # Imprimindo Matriz Transposta
 print('\nMatriz Transposta:')
-for i in range(n):
-    for j in range(m):
+for i in range(col):
+    for j in range(lin):
         print(f'{b[i][j]:4}',end=' ')
     print()

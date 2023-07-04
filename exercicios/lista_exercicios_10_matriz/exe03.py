@@ -5,8 +5,8 @@ corresponderá ao respectivo elemento de A somado a ele os seus índices, sendo 
 o elemento for de alguma diagonal (principal ou secundária) deverá ser colocado 0.
 """
 n = int(input('Ordem da matriz: '))
-a = [[None]*n for i in range(n)]
-b = [[None]*n for i in range(n)]
+a = [[None] * n for i in range(n)]
+b = [[None] * n for i in range(n)]
 
 print('\nDigite os elementos da matriz: ')
 for i in range(n):
@@ -18,15 +18,15 @@ for i in range(n):
 print('\nMatriz A:')
 for i in range(n):
     for j in range(n):
-        print(f'{a[i][j]:4}',end=' ')
+        print(f'{a[i][j]:4}', end=' ')
     print()
 
 print('\nMatriz B:')
 for i in range(n):
     for j in range(n):
-        if i==j or i+j == n-1:
+        if i == j or i + j == n - 1:  # i+j == n-1 (representa matriz secundária)
             b[i][j] = 0
         else:
             b[i][j] = a[i][j] + (i + j)
-        print(f'{b[i][j]:4}',end=' ')
+        print(f'{b[i][j]:4}', end=' ')
     print()

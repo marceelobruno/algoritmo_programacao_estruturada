@@ -13,6 +13,8 @@ e) Somar todos os elementos de índice par da segunda linha.
 # FIXME
 
 # Função para imprimir uma matriz
+
+
 def printa(matriz):
     for i in range(len(matriz)):
         for j in range(len(matriz)):
@@ -25,7 +27,7 @@ def quadrados(matriz):
     for j in range(len(matriz)):
         for i in range(len(matriz)):
             if j == 0:
-                soma += matriz[i]
+                soma += (matriz[i][j] ** 2)
     return soma
 
 
